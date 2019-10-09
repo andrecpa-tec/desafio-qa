@@ -1,0 +1,26 @@
+Funcionalidade: Lista de Importações
+Eu como administrador
+Desejo verificar as compras relacionadas à importação da minha loja
+
+
+Cenário: Visualizar compras importadas
+Dado que uma compra seja realizada no Portal de Compras Importadas
+Quando eu acessar a tela Lista de importações da sua loja
+Então o sistema deverá exibir a compra realizada na grid de importações com as colunas "Comprador", "Descrição", "Preço", "Quantidade", "Total", "Nome vendedor" e "Endereço Vendedor"
+
+Cenário: Editar compras importadas
+Dado que eu esteja na tela Lista de importações da sua loja
+Quando eu clicar na descrição do produto
+Então o sistema deverá exibir a tela Edição de Produtos
+
+Cenário: Visualizar edição das compras importadas
+Dado que esteja na tela de Edição de Produtos
+E deseje alterar os campos Nome, Valor Principal e Valor do Desconto
+E clicar no botão Salvar
+Então o sistema deverá exibir mensagem "Edição realizad com sucesso!"
+E deverá voltar para a tela Lista de importações da sua loja exibindo corretamente os valores editados
+
+Cenário: Acessar perfil do comporador
+Dado que eu esteja na tela Lista de importações da sua loja
+Quando eu clicar no nome do comprador
+Então o sistema deverá exibir a tela Perfil do Comprador
